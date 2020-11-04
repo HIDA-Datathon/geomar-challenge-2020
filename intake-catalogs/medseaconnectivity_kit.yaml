@@ -1,0 +1,19 @@
+plugins:
+  source:
+    - module: intake_xarray
+    
+sources:
+
+  medsea-trajectories-stokes:
+    description: Parcels trajectories subject to stokes drift
+    driver: zarr
+    args:
+      urlpath: "/pfs/work7/workspace/scratch/ea7822-datathon_geomar-0/data/med_sea_connectivity_v2019.09.11.2/traj_data_with_stokes.zarr/"
+      consolidated: False
+
+  medsea-trajectories:
+    description: Parcels trajectories
+    driver: zarr
+    args:
+      urlpath: "/pfs/work7/workspace/scratch/ea7822-datathon_geomar-0/data/med_sea_connectivity_v2019.09.11.2/traj_data_without_stokes.zarr/"
+      consolidated: False
