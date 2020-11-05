@@ -20,7 +20,7 @@ mkdir -p ${JUPYTER_USER_KERNEL_DIR}
 
 echo '{
  "argv": [
-  "'"${CONDA_TARGET_DIR}"'/jupyter-kernel.sh",
+  "'"${CONDA_TARGET_DIR}"'/conda-jupyter-kernel.sh",
   "-f",
   "{connection_file}"
  ],
